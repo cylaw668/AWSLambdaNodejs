@@ -1,0 +1,19 @@
+The system overview:
+Cloud provider: AWS
+Services use: API Gateway and Lambda
+Tools: Terraform, Jenkins and docker
+Program language: Node.js
+
+1. Create a RESTAPI application use Node.js
+2. Create a terraform deployment script for IAM
+3. Create a terraform deployment script for Lambda
+4. Create a terraform deployment script for API Gateway
+5. Download Jenkins in docker (Which contains terraform plugin)
+6. Setup credentials for jenkins 
+6. Create a Jenkins pipeline for different stages: Download from Git, Terraform init, Terraform apply
+
+Programming workflow
+AWS API Gateway --> AWS Lambda --> Nodejs RESTAPI
+
+CI/CD
+Git --> Jenkins --> Terraform 
